@@ -22,7 +22,7 @@ jobs:
   steps:
   - task: SonarCloudPrepare@1
     inputs:
-      SonarCloud: 'Sonarcloud'
+      SonarCloud: 'tarea-devsecops'
       organization: 'clagosu'
       projectKey: 'DevSecOps-USACH_spring-clinic'
       projectName: 'spring-clinic'
