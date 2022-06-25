@@ -24,8 +24,8 @@ jobs:
     inputs:
       SonarCloud: 'tarea-devsecops'
       organization: 'clagosu'
-      projectKey: 'DevSecOps-USACH_spring-clinic'
-      projectName: 'spring-clinic'
+      projectKey: 'clagosu_pet-clinic'
+      projectName: 'pet-clinic'
     displayName: 'Preparing Sonarqube Environment'
     
   - task: Gradle@3
