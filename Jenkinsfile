@@ -7,9 +7,10 @@ pipeline {
             }
         }
 
-        stage('HOLAMUNDO') {
+        stage('SAST') {
             steps {
-                sh 'Hola Mundo'
+                sh 'chmod +x gradlew'
+                sh './gradlew sonarqube'
             }
         }
     }
