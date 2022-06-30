@@ -10,7 +10,7 @@ pipeline {
         stage('SAST') {
             steps {
                 sh 'chmod +x gradlew'
-                sh './gradlew sonarqube'
+                sh './gradlew sonarqube -Dsonar.login=6a1ea43fb933fa51756a7f29341fab961eaff194'
             }
         }
     }
