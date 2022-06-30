@@ -1,10 +1,16 @@
 pipeline {
     agent any 
     stages {
-        stage('HOLAMUNDO') {
+        stage('SCM') {
             steps {
-                sh 'Hola Mundo'
+                checkout scm 
             }
         }
+
+        //stage('HOLAMUNDO') {
+        //    steps {
+        //        sh 'Hola Mundo'
+        //    }
+       // }
     }
 }
