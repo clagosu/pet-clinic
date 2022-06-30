@@ -7,10 +7,10 @@ pipeline {
             }
         }
 
-        //stage('HOLAMUNDO') {
-        //    steps {
-        //        sh 'Hola Mundo'
-        //    }
-       // }
+        stage('HOLAMUNDO') {
+            steps {
+                sh 'Hola Mundo'
+            }
+        }
     }
 }
