@@ -47,3 +47,9 @@ jobs:
   #  inputs:
   #    SonarCloud: 'Sonarcloud'
   #    organization: 'devsecops-usach'
+  
+  - task: dependency-check-build-task@6
+    inputs:
+      projectName: 'pet-clinic'
+      scanPath: '$(Pipeline.Workspace)'
+      format: 'HTML'
